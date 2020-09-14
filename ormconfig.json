@@ -1,0 +1,24 @@
+{
+	"type": "postgres",
+	"host": "localhost",
+	"port": 8081,
+	"username": "postgres",
+	"password": "postgres",
+	"database": "postgres",
+	"synchrpnize": false,
+	"logging": false,
+	"entities": [
+		"dist/src/entity/**/*.ts"
+	],
+	"migrations": [
+		"dist/src/migration/**/*.ts"
+	],
+	"subscribers": [
+		"dist/src/subscribers/**/*.ts"
+	],
+	"cli": {
+		"entitiesDir": "dist/src/entities",
+		"migrationsDir": "dist/src/migrations",
+		"subscribersDir": "dist/src/subscribers"
+	}
+}
